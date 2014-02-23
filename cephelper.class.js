@@ -41,7 +41,6 @@ function CepHelper(cepParam) {
 
     this.getCepWithNumberOnly = function() {
         return this.getCep().replace('-', '');
-
     };
 
     this.getServicesUrlList = function() {
