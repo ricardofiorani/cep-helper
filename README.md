@@ -18,28 +18,28 @@ Dependências
 CepHelper depende de algumas bibliotecas e algumas outras coisas para funcionar:
 
 * [jQuery] - Utilizado para efetuar a requisição cross-domain ajax para os web-services
-* [você] - Um bom programador que sabe o básico de orientação a objeto em javascript.
+* [você] - Um bom programador que saiba o básico de orientação a objeto em javascript.
 
 Instalação
 --------------
 
 ```sh
-git clone [git-repo-url] cep-helper
+git clone https://github.com/ricardofiorani/cep-helper/
 ```
 
 Utilização
 --------------
 Declare a classe após a declaração jquery
 ```html
-<script type="text/javascript" src="async.js"></script>
+<script type="text/javascript" src="cephelper.class.js"></script>
 ```
 
 ```js
 //Exemplo 1
-cepConsultado = $('#input-zip').val();
-cepClass = new CepHelper(cepConsultado);
-resultado = cepClass.run();
-console.log(resultado);
+cepConsultado = $('#input-zip').val(); //O Input com o CEP informado pelo usuário
+cepClass = new CepHelper(cepConsultado); //Aqui instanciamos a classe CepHelper passando o CEP
+resultado = cepClass.run(); // **Mágica**
+console.log(resultado); //Aqui será retornado um JSON com o endereço
 ```
 
 
@@ -48,5 +48,3 @@ console.log(resultado);
 
 [jQuery]:http://jquery.com
 [você]:http://i.imgur.com/SBwbo4e.jpg
-
-    
