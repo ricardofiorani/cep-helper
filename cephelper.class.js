@@ -68,7 +68,7 @@ function CepHelper(cepParam) {
     };
 
     this.setResponseObj = function(_responseObj) {
-        this.responseObj = _responseObj;
+        this.responseObj = jQuery.parseJSON(_responseObj);
     };
 
     this.getResponseObj = function() {
